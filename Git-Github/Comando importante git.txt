@@ -1,0 +1,2 @@
+Git init -> Iniciar um versionamento 
+git status -> Verificar o status do projeto.
