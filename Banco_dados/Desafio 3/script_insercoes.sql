@@ -16,6 +16,10 @@ INSERT INTO `e-commerce`.`vendedor` (`id_vendedor`, `razao_social`, `cpf/cnpj`, 
 INSERT INTO `e-commerce`.`vendedor` (`id_vendedor`, `razao_social`, `cpf/cnpj`, `nome_vendedor`, `telefone`, `email`) VALUES ('3', 'Vivo', '258741', 'Maria', '3212457896', 'maria@gmail.com');
 INSERT INTO `e-commerce`.`vendedor` (`id_vendedor`, `razao_social`, `cpf/cnpj`, `nome_vendedor`, `telefone`, `email`) VALUES ('4', 'Jos', '236589', 'João', '3236633663', 'joao@gmail.com');
 INSERT INTO `e-commerce`.`vendedor` (`id_vendedor`, `razao_social`, `cpf/cnpj`, `nome_vendedor`, `telefone`, `email`) VALUES ('5', 'Cart', '987456', 'Carlos', '3225874123', 'carlos@gmail.com');
+-- Alteração de nome cpf/cnpj
+ALTER TABLE `e-commerce`.`vendedor` 
+CHANGE COLUMN `cpf/cnpj` `cpf_cnpj` VARCHAR(45) NOT NULL ;
+
 
 -- Entidade estoque
 INSERT INTO `e-commerce`.`estoque` (`id_estoque`, `local`, `responsavel`) VALUES ('1', 'São Paulo', 'José');
